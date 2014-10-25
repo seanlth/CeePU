@@ -11,26 +11,42 @@
 #include "ALU.h"
 #include "RegisterFile.h"
 
+#include "Shifter.h"
 
 
+bits a = UnumberInBits(1);
+bits b = UnumberInBits(0);
+bits r = UnumberInBits(0);
 
 
 int main(int argc, const char * argv[])
 {
-    RegisterFile r = RegisterFile();
+    Shifter s = Shifter();
     
-    bits a = UnumberInBits(0);
-    bits b = UnumberInBits(0);
+    s.shift(a, {1, 0}, false, false, r);
     
-    r.load(UnumberInBits(100), {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, true, true, a, b);
+    printBits(r);
     
-    std::cout << UbitsToNumber(a) << std::endl;
-    std::cout << UbitsToNumber(b) << std::endl;
+    s.shift(r, {0, 1}, true, false, r);
     
-    r.load(UnumberInBits(101), {0, 0, 0, 0, 1}, {0, 0, 0, 0, 0}, true, true, a, b);
+    printBits(r);
+
     
-    std::cout << UbitsToNumber(a) << std::endl;
-    std::cout << UbitsToNumber(b) << std::endl;
+//    RegisterFile r = RegisterFile();
+//    
+//    bits a = UnumberInBits(0);
+//    bits b = UnumberInBits(0);
+//    
+//    r.load(UnumberInBits(100), {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, true, true, a, b);
+//    
+//    
+//    std::cout << UbitsToNumber(a) << std::endl;
+//    std::cout << UbitsToNumber(b) << std::endl;
+//    
+//    r.load(UnumberInBits(101), {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, true, true, a, b);
+//    
+//    std::cout << UbitsToNumber(a) << std::endl;
+//    std::cout << UbitsToNumber(b) << std::endl;
 
 //    FlipFlop flip = FlipFlop();
 //    

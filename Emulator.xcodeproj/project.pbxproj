@@ -10,6 +10,8 @@
 		4319414719E9E9FE0092D299 /* FlipFlop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4319414519E9E9FE0092D299 /* FlipFlop.cpp */; };
 		4335945519F0401F0048A880 /* LogicUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4335945319F0401F0048A880 /* LogicUnit.cpp */; };
 		439F569F19F1D18D0005A0C2 /* ALU.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 439F569D19F1D18D0005A0C2 /* ALU.cpp */; };
+		43EEE7A919FBC09400D6BE01 /* FunctionalUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43EEE7A719FBC09400D6BE01 /* FunctionalUnit.cpp */; };
+		43EEE7AC19FBD83100D6BE01 /* Shifter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43EEE7AA19FBD83100D6BE01 /* Shifter.cpp */; };
 		43EF9BC919E71FEF00FDB8E1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43EF9BC819E71FEF00FDB8E1 /* main.cpp */; };
 		43EF9BD119E7200200FDB8E1 /* Register.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43EF9BCF19E7200200FDB8E1 /* Register.cpp */; };
 		43EF9BD419E7201300FDB8E1 /* RegisterFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43EF9BD219E7201300FDB8E1 /* RegisterFile.cpp */; };
@@ -36,6 +38,10 @@
 		4335945419F0401F0048A880 /* LogicUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogicUnit.h; sourceTree = "<group>"; };
 		439F569D19F1D18D0005A0C2 /* ALU.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ALU.cpp; sourceTree = "<group>"; };
 		439F569E19F1D18D0005A0C2 /* ALU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALU.h; sourceTree = "<group>"; };
+		43EEE7A719FBC09400D6BE01 /* FunctionalUnit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FunctionalUnit.cpp; sourceTree = "<group>"; };
+		43EEE7A819FBC09400D6BE01 /* FunctionalUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionalUnit.h; sourceTree = "<group>"; };
+		43EEE7AA19FBD83100D6BE01 /* Shifter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shifter.cpp; sourceTree = "<group>"; };
+		43EEE7AB19FBD83100D6BE01 /* Shifter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shifter.h; sourceTree = "<group>"; };
 		43EF9BC519E71FEF00FDB8E1 /* Emulator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Emulator; sourceTree = BUILT_PRODUCTS_DIR; };
 		43EF9BC819E71FEF00FDB8E1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		43EF9BCF19E7200200FDB8E1 /* Register.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Register.cpp; sourceTree = "<group>"; };
@@ -95,6 +101,10 @@
 				4335945419F0401F0048A880 /* LogicUnit.h */,
 				439F569D19F1D18D0005A0C2 /* ALU.cpp */,
 				439F569E19F1D18D0005A0C2 /* ALU.h */,
+				43EEE7AA19FBD83100D6BE01 /* Shifter.cpp */,
+				43EEE7AB19FBD83100D6BE01 /* Shifter.h */,
+				43EEE7A719FBC09400D6BE01 /* FunctionalUnit.cpp */,
+				43EEE7A819FBC09400D6BE01 /* FunctionalUnit.h */,
 			);
 			path = Emulator;
 			sourceTree = "<group>";
@@ -160,7 +170,9 @@
 				439F569F19F1D18D0005A0C2 /* ALU.cpp in Sources */,
 				43EF9BDA19E720C800FDB8E1 /* FullAdder.cpp in Sources */,
 				43EF9BC919E71FEF00FDB8E1 /* main.cpp in Sources */,
+				43EEE7A919FBC09400D6BE01 /* FunctionalUnit.cpp in Sources */,
 				43EF9BD719E7202100FDB8E1 /* Adder.cpp in Sources */,
+				43EEE7AC19FBD83100D6BE01 /* Shifter.cpp in Sources */,
 				4335945519F0401F0048A880 /* LogicUnit.cpp in Sources */,
 				43EF9BD419E7201300FDB8E1 /* RegisterFile.cpp in Sources */,
 			);
